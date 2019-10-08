@@ -20,7 +20,7 @@ for iter = 1:num_iters
     pred = X * theta;
     diff = pred - y;
     S = diff' * X;
-    size(S)
+    %size(S)
     theta = theta - alpha/m*S';
 
 

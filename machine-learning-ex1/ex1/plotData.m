@@ -20,7 +20,13 @@ figure; % open a new figure window
 plot(x,y,'rx','MarkerSize',10)
 xlabel('Population of City in 10,000s')
 ylabel('Profit in $10,000s')
-
+grid on
+xlim([0 5])
+ylim([0 12])
+ax = gca;
+ax.YTick=0:1:12;
+ax.XTick=0:1:5;
+set(gca,'Fontsize',15)
 
 % ============================================================
 
